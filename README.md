@@ -4,7 +4,7 @@
 3 Parts in the project:
 
 1 - Scraping of the recipes
-2 - Image recognition
+2 - Image recognition->Resnet
 3 - Recipes proposals based on our ingredients
 
 Short-term objectives:
