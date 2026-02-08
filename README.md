@@ -12,8 +12,6 @@ An intelligent recipe recommendation system that analyzes your fridge contents a
 - [Project Structure](#project-structure)
 - [Technologies](#technologies)
 - [Data Pipeline](#data-pipeline)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
