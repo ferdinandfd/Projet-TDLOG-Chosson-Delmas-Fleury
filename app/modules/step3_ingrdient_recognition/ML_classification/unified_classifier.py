@@ -1,14 +1,14 @@
 """
-Unified ML Classifier for ingredient recognition using Hugging Face model
-Combines real ML inference with workflow integration
-Falls back gracefully when PyTorch is not available
+Unified ML Classifier for ingredient recognition using Hugging Face model.
+Combines real ML inference with workflow integration.
+Falls back to mock predictions when PyTorch is not available.
 """
 
 import logging
 from typing import List, Dict
 from PIL import Image
 
-# Try to import streamlit - graceful fallback for testing
+# Import optional dependency for streamlit integration
 try:
     import streamlit as st
     STREAMLIT_AVAILABLE = True
@@ -16,7 +16,7 @@ except ImportError:
     STREAMLIT_AVAILABLE = False
     st = None
 
-# Try to import PyTorch and transformers - graceful fallback if not available
+# Import optional ML dependencies (PyTorch and transformers)
 TORCH_AVAILABLE = False
 torch = None
 AutoModelForImageClassification = None
@@ -289,7 +289,7 @@ class IngredientClassifier:
             if progress_bar:
                 progress_bar.progress((i + 1) / len(extracted_ingredients))
         
-        # Clean up progress UI elements
+        # Remove progress UI elements
         if progress_bar:
             progress_bar.empty()
         if status_text:

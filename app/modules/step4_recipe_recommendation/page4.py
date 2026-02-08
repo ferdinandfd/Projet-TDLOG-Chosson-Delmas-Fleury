@@ -103,7 +103,7 @@ def recipe_recommendation_mode():
                 if score > 0:  # Only show recipes with non-zero scores
                     with st.container():
                         st.markdown(f"**{i+1}. {recipe_name}**")
-                        st.markdown(f"📊 Match Score: {score}")
+                        st.markdown(f"Match Score: {score}")
                         st.markdown("---")
             
             # Debug information

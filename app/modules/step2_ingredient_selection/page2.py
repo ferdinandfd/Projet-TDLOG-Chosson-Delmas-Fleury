@@ -2,7 +2,7 @@ import streamlit as st
 from datetime import datetime
 from PIL import Image, ImageDraw
 
-# Try to import streamlit_image_coordinates - graceful fallback if not available
+# Import optional dependency for click detection
 CLICK_DETECTION_AVAILABLE = False
 try:
     from streamlit_image_coordinates import streamlit_image_coordinates

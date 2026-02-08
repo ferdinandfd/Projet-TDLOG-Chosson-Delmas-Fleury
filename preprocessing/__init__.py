@@ -23,7 +23,7 @@ from .config.settings import PreprocessingConfig
 __version__ = "1.0.0"
 __author__ = "Recipe Recommender Team"
 
-# Main pipeline function for easy import
+# Export main pipeline function
 from .src.pipeline_runner import run_preprocessing_pipeline
 
 __all__ = [

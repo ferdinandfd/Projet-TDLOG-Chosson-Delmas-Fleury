@@ -9,7 +9,7 @@ Pipeline Steps:
 1. Create recipe-ingredient binary matrix from raw recipe data
 2. Clean and standardize the matrix using ingredient mapping
 3. Filter recipe dataset to match the cleaned matrix dimensions
-4. Generate comprehensive reports on the preprocessing results
+4. Generate reports on the preprocessing results
 
 Usage:
     python -m preprocessing.src.pipeline_runner
@@ -265,7 +265,7 @@ class PreprocessingPipeline:
         """
         pipeline_start_time = time.time()
         
-        logger.info("🚀 Starting Recipe Preprocessing Pipeline")
+        logger.info("Starting Recipe Preprocessing Pipeline")
         logger.info(f"Configuration: {self.config}")
         
         # Setup directories
@@ -312,11 +312,11 @@ class PreprocessingPipeline:
         
         # Final message
         if success:
-            logger.info("🎉 Pipeline completed successfully!")
-            logger.info(f"⏱️  Total time: {total_elapsed:.2f} seconds")
-            logger.info(f"📊 Report saved to: {self.config.OUTPUT_DIR}")
+            logger.info("Pipeline completed successfully!")
+            logger.info(f"Total time: {total_elapsed:.2f} seconds")
+            logger.info(f"Report saved to: {self.config.OUTPUT_DIR}")
         else:
-            logger.error("❌ Pipeline failed!")
+            logger.error("Pipeline failed!")
         
         return success
 

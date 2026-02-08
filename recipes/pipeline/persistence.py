@@ -1,7 +1,7 @@
 """
 Data persistence utilities for recipe dataset management.
 
-This module handles CSV file operations with robust error handling for
+This module handles CSV file operations with error handling for
 malformed data, including format fixing and type conversion for ingredient lists.
 """
 
